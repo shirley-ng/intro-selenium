@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\shirley_truong\Documents\Visual Studio 2010\Projects\IntroSelenium\FrameworkExample\bin\Debug\FrameworkExample.dll" total="6" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2014-03-17" time="14:35:39">
+  <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.6413" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Users\shirley_truong\Documents\Visual Studio 2010\Projects\IntroSelenium\packages\NUnit.Runners.2.6.3\tools" machine-name="TXLPT318" user="shirley_truong" user-domain="CORP" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\Users\shirley_truong\Documents\Visual Studio 2010\Projects\IntroSelenium\FrameworkExample\bin\Debug\FrameworkExample.dll" executed="True" result="Success" success="True" time="15.622" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="FrameworkExample" executed="True" result="Success" success="True" time="15.617" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="15.617" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="When_feeling_ducky" executed="True" result="Success" success="True" time="9.856" asserts="0">
+                <results>
+                  <test-case name="FrameworkExample.Tests.When_feeling_ducky.Should_navigate_directly_to_Bing" executed="True" result="Success" success="True" time="4.177" asserts="1" />
+                  <test-case name="FrameworkExample.Tests.When_feeling_ducky.Should_navigate_directly_to_Google" executed="True" result="Success" success="True" time="2.395" asserts="1" />
+                  <test-case name="FrameworkExample.Tests.When_feeling_ducky.Should_navigate_directly_to_Yahoo" executed="True" result="Success" success="True" time="3.274" asserts="1" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="When_searching" executed="True" result="Success" success="True" time="5.758" asserts="0">
+                <results>
+                  <test-case name="FrameworkExample.Tests.When_searching.Should_not_return_suggested_result_for_valid_term" executed="True" result="Success" success="True" time="2.992" asserts="1" />
+                  <test-case name="FrameworkExample.Tests.When_searching.Should_return_result_for_valid_term" executed="True" result="Success" success="True" time="0.857" asserts="1" />
+                  <test-case name="FrameworkExample.Tests.When_searching.Should_return_suggested_result_for_invalid_term" executed="True" result="Success" success="True" time="1.084" asserts="1" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

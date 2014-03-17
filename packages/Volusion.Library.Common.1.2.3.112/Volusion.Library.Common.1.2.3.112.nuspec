@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Volusion.Library.Common</id>
+    <version>1.2.3.112</version>
+    <title>Volusion.Library.Common</title>
+    <authors>Volusion</authors>
+    <owners>Volusion</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Library of common, application-independent classes that only depend on .NET framework 4.0.</description>
+    <summary>Library of common, application-independent classes that only depend on .NET framework 4.0.</summary>
+    <tags>volusion common dotnet40 dotnet45</tags>
+  </metadata>
+</package>
