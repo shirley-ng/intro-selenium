@@ -15,7 +15,7 @@ namespace FixieExample.PageObjects
 
         protected override string Query
         {
-            get { return "Test=Foo"; }
+            get { return ""; }
         }
 
         public DuckDuckGoSearchPage(IWebDriver driver, string baseUriString)
@@ -26,6 +26,7 @@ namespace FixieExample.PageObjects
 
         public void FeelingDucky(string term)
         {
+            ValidatePath();
             Search(String.Format("! {0}", term));
         }
 

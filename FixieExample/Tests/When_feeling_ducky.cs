@@ -1,6 +1,5 @@
 ﻿using FixieExample.PageObjects;
 using Should;
-using System;
 
 namespace FixieExample.Tests
 {
@@ -34,11 +33,6 @@ namespace FixieExample.Tests
             searchPage.FeelingDucky("Yahoo");
 
             Driver.Title.ShouldEqual("Yahoo");
-        }
-
-        public void Example_clean_up_on_error()
-        {
-            throw new Exception("WebDriverTestFixture will clean up this browser window");
         }
     }
 }

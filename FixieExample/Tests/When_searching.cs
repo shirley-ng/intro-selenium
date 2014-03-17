@@ -1,6 +1,5 @@
 ﻿using FixieExample.PageObjects;
 using Should;
-using System;
 
 namespace FixieExample.Tests
 {
@@ -38,17 +37,6 @@ namespace FixieExample.Tests
             _searchPage.Search("Giraffeslaugh");
 
             _searchPage.HasSuggestedSearchTerm().ShouldBeTrue("Expected to find suggested giraffe text but did not");
-        }
-
-        public void Example_clean_up_on_error()
-        {
-            throw new Exception("SharedWebDriverTestFixture will clean up this browser window");
-        }
-
-        public void Example_not_on_correct_page()
-        {
-            Driver.Navigate().GoToUrl("https://duckduckgo.com/goodies/");
-            _searchPage.Search("Giraffes");
         }
     }
 }

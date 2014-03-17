@@ -22,7 +22,6 @@ namespace FixieExample
         {
             _configuration = ConfigurationProvider.Current;
             _driver = DriverFactory.Current.Create(_configuration);
-            
         }
 
         public void Dispose()
