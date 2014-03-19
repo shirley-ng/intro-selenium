@@ -12,7 +12,6 @@ namespace FluentPageObjectExample.Tests
             Driver.Navigate().GoToUrl(Configuration.Uri);
 
             new DuckDuckGoSearchPage(Driver, Configuration.Uri)
-                .NavigateTo<DuckDuckGoSearchPage>()
                 .FeelingDucky("Google");
 
             Assert.That(Driver.Title, Is.EqualTo("Google"));
@@ -24,7 +23,6 @@ namespace FluentPageObjectExample.Tests
             Driver.Navigate().GoToUrl(Configuration.Uri);
 
             new DuckDuckGoSearchPage(Driver, Configuration.Uri)
-                .NavigateTo<DuckDuckGoSearchPage>()
                 .FeelingDucky("Bing");
 
             Assert.That(Driver.Title, Is.EqualTo("Bing"));
@@ -36,7 +34,6 @@ namespace FluentPageObjectExample.Tests
             Driver.Navigate().GoToUrl(Configuration.Uri);
 
             new DuckDuckGoSearchPage(Driver, Configuration.Uri)
-                 .NavigateTo<DuckDuckGoSearchPage>()
                  .FeelingDucky("Yahoo");
 
             Assert.That(Driver.Title, Is.EqualTo("Yahoo"));

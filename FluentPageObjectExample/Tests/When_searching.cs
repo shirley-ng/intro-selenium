@@ -12,7 +12,6 @@ namespace FluentPageObjectExample.Tests
             Driver.Navigate().GoToUrl(Configuration.Uri);
 
             bool result = new DuckDuckGoSearchPage(Driver, Configuration.Uri)
-                .NavigateTo<DuckDuckGoSearchPage>()
                 .Search("Giraffes")
                 .HasSearchResults();
 
@@ -25,7 +24,6 @@ namespace FluentPageObjectExample.Tests
             Driver.Navigate().GoToUrl(Configuration.Uri);
 
             bool result = new DuckDuckGoSearchPage(Driver, Configuration.Uri)
-                .NavigateTo<DuckDuckGoSearchPage>()
                 .Search("Giraffes")
                 .HasSuggestedSearchTerm();
 
@@ -38,7 +36,6 @@ namespace FluentPageObjectExample.Tests
             Driver.Navigate().GoToUrl(Configuration.Uri);
 
             bool result = new DuckDuckGoSearchPage(Driver, Configuration.Uri)
-                .NavigateTo<DuckDuckGoSearchPage>()
                 .Search("Giraffeslaugh")
                 .HasSuggestedSearchTerm();
 

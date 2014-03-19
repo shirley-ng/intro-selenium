@@ -47,17 +47,6 @@ namespace FluentPageObjectExample.PageObjects
             return currentUri.AbsolutePath.ToLower() == AbsolutePath.ToLower();
         }
 
-        /// <summary>
-        /// Navigate to this page.
-        /// </summary>
-        public TPageObject NavigateTo<TPageObject>()
-            where TPageObject : PageObject
-        {
-            var uriBuilder = new UriBuilder(_baseUriString) { Query = Query, Path = AbsolutePath };
-            _driver.Navigate().GoToUrl(uriBuilder.Uri);
-            return (TPageObject)Activator.CreateInstance(typeof (TPageObject), new object[] { Driver, _baseUriString });
-        }
-
         protected void ValidatePath()
         {
             if (!IsCurrentPath())
